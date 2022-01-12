@@ -1,8 +1,15 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
+import img3 from "../assets/3.jpg";
+
 import { withGoogleMap, GoogleMap, Marker, Map } from "react-google-maps";
 
-const LocationPin = ({ text }) => <div className="pin">{text}</div>;
+const LocationPin = ({ text }) => (
+  <div className="pin">
+    <img src={img3} alt="carousel" />
+    <p>{text}</p>
+  </div>
+);
 
 const InitialMap = ({ zoomLevel, location }) => {
   return (
